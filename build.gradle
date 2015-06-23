@@ -40,6 +40,8 @@ subprojects {
 project.ext.javaprojects = ["mapsforge-core", "mapsforge-map-reader", "mapsforge-map", "mapsforge-map-awt", "mapsforge-map-writer", "SwingMapViewer"]
 
 configure(filterProjects(project.javaprojects)) { 
+  apply plugin: 'eclipse'
+  apply plugin: 'idea'
   apply plugin: 'java'	
   apply plugin: 'checkstyle'
   apply plugin: 'pmd'
